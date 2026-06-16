@@ -1,4 +1,4 @@
-# 💻 Code Plagiarism Detection System
+# 💻 ByteShield : Automated Code Integrity & Plaglarism Detection Platform
 
 A web-based system that detects similarity between Java programs using **structural, statistical, and semantic analysis**.
 
