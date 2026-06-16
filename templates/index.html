@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Code Plagiarism Detection System</title>
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="/static/style.css?v=2">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Code Font -->
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <h1><i class="fa-solid fa-code"></i> Code Plagiarism Detection System</h1>
+    <p>Analyze similarity between Java programs using structural and semantic comparison</p>
+</header>
+
+<div class="container">
+
+    <!-- UPLOAD SECTION -->
+    <div class="upload-section">
+
+        <!-- FILE 1 -->
+        <div class="upload-card">
+            <h3>Upload File 1</h3>
+
+            <label class="upload-box">
+                <i class="fa-solid fa-file-code"></i>
+                <span>Select Java File</span>
+                <input type="file" id="file1" accept=".java">
+            </label>
+
+            <p id="name1" class="file-name">No file selected</p>
+        </div>
+
+        <!-- FILE 2 -->
+        <div class="upload-card">
+            <h3>Upload File 2</h3>
+
+            <label class="upload-box">
+                <i class="fa-solid fa-file-code"></i>
+                <span>Select Java File</span>
+                <input type="file" id="file2" accept=".java">
+            </label>
+
+            <p id="name2" class="file-name">No file selected</p>
+        </div>
+
+    </div>
+
+    <!-- BUTTON -->
+    <button id="checkBtn" onclick="checkSimilarity()">
+        <span id="btnText">Check Similarity</span>
+        <span class="loader" id="loader"></span>
+    </button>
+
+    <!-- RESULT -->
+    <div id="result" class="result-container"></div>
+
+</div>
+
+<!-- SCRIPT -->
+<script src="/static/script.js"></script>
+
+</body>
+</html>
